@@ -1,0 +1,116 @@
+body{
+    margin: 0px;
+    background: #f2f2f2;
+}
+.main_header_style{
+    background: #000;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    display: flex;
+}
+.header_logo_style{
+    background: #fff;
+    width: 150px;
+    margin-left: 20px;
+    height: 32px;
+}
+.logo_style{
+    margin: 0px 5px 0px 5px;
+}
+.search_bar_style{
+    height: 28px;
+    width: 500px;
+    border: none;
+    border-radius: 2px;
+    color: #1a1a1a;
+}
+.header_icon_style{
+    opacity: 0.8;
+    color: white;
+    margin-right: 20px;
+    height: 32px;   
+    text-align: center;
+}
+.header_icons_style{
+    display: flex;
+}
+.main_title_text_style{
+    text-align: center;
+    font: 38px Roboto-Regular,Helvetica,Arial,sans-serif;
+    padding: 30px;
+    border-top: 1px;
+    color: black;
+}
+.style_poster_book{
+    width: 200px;
+    height:320px;
+
+}
+.style_books_gallery{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px 52px;
+}
+.holder{
+    position:relative;   
+    width:200px;
+    height:320px;
+    background:#ff6600;
+    margin:10px;
+}
+.holder:hover{
+    transform: scale(1.05);
+    transition: transform .4s;
+    transform-origin: bottom;
+
+}
+.block{
+    position:absolute;
+    left:0;
+    bottom:0;
+    right:0;
+    top:0;
+    background:rgba(255,255,255, 0.8);
+    padding:5px;
+    display:none;
+    font-size: 17px;
+}
+.holder:hover .block{
+    display:block;
+}
+.discrip_text_style{
+    margin: 10px;
+    line-height: 16px;
+    font-weight: 600;
+}
+.price_text_style{
+    font-size: 20px;
+    text-align: center;
+    padding: 5px 30px 5px 30px;
+    color: white;
+}
+.text_link_style{
+    border-bottom: 2px dashed;
+    display: inline-block
+}
+.buy_button_style{
+    background: linear-gradient(180deg,#ff4800 0,#ff8700);
+    display: inline-block;
+    border-radius: 3px;
+    margin: 30px 10px 0px 10px;
+    cursor: pointer;
+    
+}
+.section-name{
+    text-align: left;
+    font: 24px Roboto-Regular,Helvetica,Arial,sans-serif;
+    margin: 25px 65px 15px 65px;
+    border-top: 1px;
+}
+.input_discrip_text_style{
+    display: contents;
+    /* border-bottom: 2px dashed; */
+    font-weight: normal;
+}

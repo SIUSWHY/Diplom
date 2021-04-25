@@ -57,7 +57,6 @@ body{
     position:relative;   
     width:200px;
     height:320px;
-    background:#ff6600;
     margin:10px;
 }
 .holder:hover{
@@ -75,6 +74,7 @@ body{
     background:rgba(255,255,255, 0.8);
     padding:5px;
     display:none;
+    /* font-family: Tahoma,Helvetica,sans-serif; */
     font-size: 17px;
 }
 .holder:hover .block{
@@ -99,7 +99,7 @@ body{
     background: linear-gradient(180deg,#ff4800 0,#ff8700);
     display: inline-block;
     border-radius: 3px;
-    margin: 30px 10px 0px 10px;
+    margin: 0px 10px 10px 10px;
     cursor: pointer;
     
 }
@@ -111,6 +111,8 @@ body{
 }
 .input_discrip_text_style{
     display: contents;
-    /* border-bottom: 2px dashed; */
     font-weight: normal;
+}
+.max_size_text_block{
+    height: 260px;
 }

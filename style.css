@@ -119,7 +119,7 @@ body{
 }
 .dialog_box_scale{
     width: 1000px;
-    height: 500px;
+    /* height: 500px; */
 }
 .name_of_book{
     font: 24px Arial,Helvetica,sans-serif;

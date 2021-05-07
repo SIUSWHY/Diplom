@@ -74,32 +74,68 @@ const cards = [
 
 ]
 
-for (let i = 0; i < cards.length; i++) {
-    const new_card = document.createElement('div');
+// for (let i = 0; i < cards.length; i++) {
+//     const new_card = document.createElement('div');
 
-    new_card.innerHTML = `
-    <div class="holder">
-            <img class="style_poster_book" src="${cards[i].img}">
-            <div class="block">
-                <div class="max_size_text_block">
-                <div class="discrip_text_style">Автор: <div class="input_discrip_text_style">${cards[i].author}</div>
-                </div>
-                <div class="discrip_text_style">Переводчик: <div class="input_discrip_text_style">${cards[i].interpreter}</div>
-                </div>
-                <div class="discrip_text_style">Редактор: <div class="input_discrip_text_style">${cards[i].editor}</div>
-                </div>
-                <div class="discrip_text_style">Жанр: <div class="input_discrip_text_style">${cards[i].genre}</div>
-                </div>
-                <div class="discrip_text_style">Издательство: <div class="input_discrip_text_style">${cards[i].publishing_house}
-                    </div>
-                </div>
-                </div>
-                <div class="buy_button_style">
-                    <div class="price_text_style">Цена: ${cards[i].price} р.</div>
-                </div>
-            </div>
-        </div>`;
+//     new_card.innerHTML = `
+//     <div class="holder">
+//             <img class="style_poster_book" src="${cards[i].img}">
+//             <div class="block">
+//                 <div class="max_size_text_block">
+//                 <div class="discrip_text_style">Автор: <div class="input_discrip_text_style">${cards[i].author}</div>
+//                 </div>
+//                 <div class="discrip_text_style">Переводчик: <div class="input_discrip_text_style">${cards[i].interpreter}</div>
+//                 </div>
+//                 <div class="discrip_text_style">Редактор: <div class="input_discrip_text_style">${cards[i].editor}</div>
+//                 </div>
+//                 <div class="discrip_text_style">Жанр: <div class="input_discrip_text_style">${cards[i].genre}</div>
+//                 </div>
+//                 <div class="discrip_text_style">Издательство: <div class="input_discrip_text_style">${cards[i].publishing_house}
+//                     </div>
+//                 </div>
+//                 </div>
+//                 <div class="buy_button_style">
+//                     <div class="price_text_style">Цена: ${cards[i].price} р.</div>
+//                 </div>
+//             </div>
+//         </div>`;
 
-    document.querySelector('.style_books_gallery').appendChild(new_card);
+//     document.querySelector('.style_books_gallery').appendChild(new_card);
+// }
+
+// меню с выбором ингридиентов 
+const favDialog = document.getElementById('favDialog');
+$(document).on('click', '.holder', function () {
+    favDialog.showModal();
+})
+
+$(document).on('click', '.closeButton', function () {
+    favDialog.close();
+})
+
+
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+btn.onclick = function () {
+    modal.style.display = "block";
 }
-{/* ${cards[i].img} */ }
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function () {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function (event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}

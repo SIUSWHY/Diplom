@@ -59,13 +59,14 @@ body{
     height:320px;
     margin:10px;
 }
-.holder:hover{
+/* .holder:hover{
     transform: scale(1.05);
     transition: transform .4s;
     transform-origin: bottom;
+    transform-origin: right;
 
-}
-.block{
+} */
+/* .block{
     position:absolute;
     left:0;
     bottom:0;
@@ -75,8 +76,8 @@ body{
     padding:5px;
     display:none;
     /* font-family: Tahoma,Helvetica,sans-serif; */
-    font-size: 17px;
-}
+    /* font-size: 17px; */
+/* }  */
 .holder:hover .block{
     display:block;
 }
@@ -115,4 +116,101 @@ body{
 }
 .max_size_text_block{
     height: 260px;
+}
+.dialog_box_scale{
+    width: 1000px;
+    height: 500px;
+}
+.name_of_book{
+    font: 24px Arial,Helvetica,sans-serif;
+
+}
+.style_title{
+    display: flex;
+    justify-content: space-between;
+}
+.text_discription_in_menu{
+    font: 14px Tahoma,Helvetica,sans-serif;
+}
+.text_decoration{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.product_info{
+    display: flex;
+    /* width: 464px; */
+}
+.product_description{
+    padding: 10px;
+    width: 244px;
+}
+.buying{
+    border-bottom: 1px solid #c0bfbf;
+    border-top: 1px solid #c0bfbf;
+    margin: 10px 0px 5px 0px;
+    padding: 10px 15px 10px 18px;
+}
+.buying_price_val{
+    font-size: 18px;
+    color: #1868a0;
+    font-weight: 600;
+}
+.btn_primary{
+    background: linear-gradient(180deg,#ff4800 0,#ff8700);
+    height: 40px;
+    width: 190px;
+    border-radius: 3px;
+    cursor: pointer;
+    color: white;
+}
+.btn_text_decoration{
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+}
+.fave{
+    color: rgba(0, 0, 0, 0.157);
+    margin: 5px 0px 5px 0px;
+}
+.link{
+    color: #1868ac;
+    border-bottom: 1px dashed;
+    font-size: 14px;
+}
+.right_text_info{
+    margin-left: 20px;
+    margin-top: 5px;
+}
+.rate_back{
+    background-image: url(img/ocenka.gif);
+    background-repeat: no-repeat;
+    width: 48px;
+    font-size: 18px;
+    color: white;
+    height: 30px;
+    padding-top: 5px;
+    text-align: center;
+}
+.rate_font{
+    font-size: 14px;
+    margin-right: 20px;
+}
+.rate_text_style{
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.product_title_text{
+    font: 14px Arial,Helvetica,sans-serif;
+    color: #000;
+    font-weight: 700;
+}
+.rate_texts_style{
+    display: flex;
+    margin-bottom: 10px;
+}
+.two_cards_info{
+    background-color: #1a1a1a17;
+    display: flex;
 }

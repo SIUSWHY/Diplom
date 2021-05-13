@@ -51,7 +51,3 @@ const reg = document.getElementById('registr');
 $(document).on('click', '.reg', function () {
     reg.showModal();
 })
-
-$(document).on('click', '.closeButton', function () {
-    favDialog.close();
-})

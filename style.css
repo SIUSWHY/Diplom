@@ -1,30 +1,41 @@
 body{
     margin: 0px;
     background: #f2f2f2;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .main_header_style{
     background: #000;
     height: 60px;
     display: flex;
     justify-content: space-between;
-    padding-top: 20px;
+    padding: 10px 0px 10px 0px;
     display: flex;
 }
 .header_logo_style{
-    background: #fff;
-    width: 150px;
+    color: white;
+    font: 24px Arial;
     margin-left: 20px;
-    height: 32px;
+}
+.border_b{
+    border-bottom: 1px solid #1a1a1a;
 }
 .logo_style{
     margin: 0px 5px 0px 5px;
 }
 .search_bar_style{
-    height: 28px;
+    height: 50px;
+    font-size: 20px;
     width: 500px;
     border: none;
     border-radius: 2px;
-    color: #1a1a1a;
+    background-color: #ededed;
+}
+.search_style{
+    color:#938888;
+    margin-left: -80px;
+    padding: 18px 0px;
+    font: 16px Arial;
+    cursor: pointer;
 }
 .header_icon_style{
     opacity: 0.8;
@@ -273,4 +284,8 @@ margin-bottom: 10px;
 }
 .social_lists_padding{
     padding: 20px 0px;
+}
+.footer_logo_position{
+    margin: 0px 700px 0px 20px;
+    padding: 10px;
 }

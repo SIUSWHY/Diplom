@@ -31,7 +31,7 @@ for (let i = 0; i < cards.length; i++) {
 
     new_card.innerHTML = `
     <div class="holder">
-                <img class="style_poster_book" id="myBtn" src="${cards[i].img}">
+                <img class="style_poster_book shadow" id="myBtn" src="${cards[i].img}">
             </div>`;
 
     document.querySelector('.style_books_gallery').appendChild(new_card);
@@ -41,6 +41,15 @@ for (let i = 0; i < cards.length; i++) {
 const favDialog = document.getElementById('favDialog');
 $(document).on('click', '.holder', function () {
     favDialog.showModal();
+})
+
+$(document).on('click', '.closeButton', function () {
+    favDialog.close();
+})
+
+const reg = document.getElementById('registr');
+$(document).on('click', '.reg', function () {
+    reg.showModal();
 })
 
 $(document).on('click', '.closeButton', function () {

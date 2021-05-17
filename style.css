@@ -43,8 +43,13 @@ body{
     opacity: 0.8;
     color: white;
     margin-right: 20px;
-    height: 32px;   
     text-align: center;
+}
+.header_icon_style:hover{
+    /* color: white; */
+    opacity: 1 ;
+    transition: opacity .2s ease-in;
+
 }
 .header_icons_style{
     display: flex;
@@ -155,7 +160,7 @@ body{
 }
 .btn_primary{
     background: linear-gradient(180deg,#ff4800 0,#ff8700);
-    height: 40px;
+    min-height: 40px;
     width: 190px;
     border-radius: 3px;
     cursor: pointer;
@@ -274,20 +279,24 @@ margin-bottom: 10px;
 }
 .social_style{
     color: white;
-    font: 22px PTsans,Helvetica,sans-serif;
+    font: 14px PTsans,Helvetica,sans-serif;
     min-width: 200px;
 
 }
 .social{
     color:rgba(255, 255, 255, 0.3);
-    font: 18px PTsans,Helvetica,sans-serif;
+    font: 10px PTsans,Helvetica,sans-serif;
     margin-top: 10px;
     cursor: pointer;
+}
+.social_margin{
+    margin-right: 10px;
 }
 .social:hover{
     transition: color .1s ease-in;
     color: white;
 }
+
 .social_lists_padding{
     display: flex;
     flex-wrap: wrap;
@@ -302,4 +311,22 @@ margin-bottom: 10px;
 }
 .footer_margin{
     margin: 0px 5%;
+}
+.second_header_menu{
+    border-top: 1px solid rgb(68, 63, 63);
+    margin: 0% 5% 0% 20%;
+    display: flex;
+}
+.s_h_menu{
+    color: rgba(255, 255, 255, 0.691);
+    font-size: 16px;
+    margin: 8px 25px 8px 0px;
+}
+.s_h_menu:hover{
+    transition: color .1s ease-in;
+    color: white;
+}
+.active{
+    color: white;
+    margin: 8px 25px 8px 0px;
 }

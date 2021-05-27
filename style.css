@@ -2,6 +2,7 @@ body{
     margin: 0px;
     background: #f2f2f2;
     font-family: Arial, Helvetica, sans-serif;
+    width: auto;
 }
 .main_header_style{
     /* margin: 0px; */
@@ -10,7 +11,7 @@ body{
     height: 60px;
     display: flex;
     justify-content: space-between;
-    padding: 10px 0px 10px 0px;
+    padding-top: 10px;
     display: flex;
 }
 .header_logo_style{
@@ -44,6 +45,12 @@ body{
     color: white;
     margin-right: 20px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.text_decor{
+    text-decoration: none;
+    color: white;
 }
 .header_icon_style:hover{
     /* color: white; */
@@ -329,4 +336,53 @@ margin-bottom: 10px;
 .active{
     color: white;
     margin: 8px 25px 8px 0px;
+}
+
+/* busket */
+.ul_style{
+    list-style-type: none;
+    display: flex;
+    padding: 0px;
+}
+.border_li_style_left{
+    padding: 5px 10px;
+    border: 1px solid #065cc2;
+    border-radius: 3px 0px 0px 3px;
+    cursor: pointer;
+}
+.border_li_style_right{
+    padding: 5px 10px;
+    border: 1px solid #065cc2;
+    border-radius: 0px 3px 3px 0px;
+    cursor: pointer;
+}
+.li_active{
+    background-color: #065cc2;
+    color: white;
+}
+.busket_margin{
+    margin: 0% 5%;
+}
+.order_style{
+    font: 20px PTSans,Helvetica,sans-serif;
+    padding-bottom: 10px;
+}
+.menu_active{
+    color: white;
+    border-bottom: 4px solid white;
+    opacity: 1;
+}
+.order_box_style{
+    background-color: white;
+    padding: 35px 40px;
+}
+.oder_item_card{
+width: 200px;
+}
+.order_img_size{
+    width: 120px;
+}
+.order_peice_style{
+    font-weight: 600;
+    padding: 10px 0px;
 }

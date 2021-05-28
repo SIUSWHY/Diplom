@@ -8,7 +8,7 @@ body{
     /* margin: 0px; */
     width: auto;
     background: #000;
-    height: 60px;
+    /* height: 60px; */
     display: flex;
     justify-content: space-between;
     padding-top: 10px;
@@ -16,7 +16,7 @@ body{
 }
 .header_logo_style{
     color: white;
-    font: 24px Arial;
+    font: 45px Bellota;
     margin-left: 20px;
 }
 .border_b{

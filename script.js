@@ -40,14 +40,14 @@ const cards = [
 cards.data
 
 for (let i = 0; i < cards.length; i++) {
-    const new_card = document.createElement('div');
+    const book = document.createElement('div');
 
-    new_card.innerHTML = `
+    book.innerHTML = `
     <div class="holder">
                 <img class="style_poster_book shadow" id="myBtn" src="${cards[i].img}">
             </div>`;
 
-    document.querySelector('.style_books_gallery').appendChild(new_card);
+    document.querySelector('.style_books_gallery').appendChild(book);
 }
 
 // меню с характеристиками книг 

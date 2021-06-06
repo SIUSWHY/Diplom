@@ -1,8 +1,8 @@
 body{
-    margin: 0px;
+    margin: 0% auto;
     background: #f2f2f2;
     font-family: Arial, Helvetica, sans-serif;
-    width: auto;
+    width: 1864px;
 }
 .main_header_style{
     /* margin: 0px; */
@@ -243,6 +243,7 @@ body{
   background-color: inherit;
   border: 3px solid;
   font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
   cursor: pointer;
 }
 .registr-butten-style{
@@ -423,14 +424,47 @@ width: 200px;
 .banner_style{
     border-radius: 10px;
     cursor: pointer;
-    margin-left: 20px;
 
 }
 .banner_books_style{
     background: linear-gradient(180deg,rgba(255,241,0,.1) 0,rgba(255,241,0,0));
-    margin-left: 20px;
     height: 200px;
+    margin-top: 20px;
     border-radius: 10px;
+}
+.small_banner_style_1{
+    background-image: url(img/glav/banner_small_5ee8e4613e86a.png);
+    width: 378px;
+    height: 260px;
+    border-radius:10px;
+    margin-right: 10px;
+}
+.small_banner_style_2{
+    background-image: url(img/glav/banner_small_607feefbbfe8a.png);
+    width: 378px;
+    height: 260px;
+    border-radius:10px;
+    margin-right: 10px;
+}
+.banner-small__title{
+    width: 378px;
+    text-align: center;
+    margin-top: 10px;
+    color:white;
+    padding-bottom: 10px;
+    border-bottom: 1px solid hsla(0,0%,100%,.2);
+    text-decoration: none;
+}
+.banner-small__anons{
+    color: white;
+    text-align: center;
+    padding-top: 180px;
+}
+.s_b_position{
+    display: flex;
+}
+.all_b_style{
+    margin-left: 20px;
 }
 .b_title_style{
     font: 16px/16px PTSansCaption,Verdana,sans-serif;
@@ -441,7 +475,7 @@ width: 200px;
     padding-top: 5px;
 }
 .content_img img{
-    margin: 30px 25px 0px 25px;
+    margin: 20px 25px 0px 25px;
     width: 80px;
     height: 118px;
     cursor: pointer;
@@ -461,6 +495,8 @@ width: 200px;
 }
 .img_books_container{
     display: flex;
+    padding-bottom: 150px;
+
 }
 .img_books_container img{
     width: 121px;
@@ -478,4 +514,90 @@ width: 200px;
 .book_discript{
     font: 19px PTSansB,Tahoma,sans-serif;
     width: 150px;
+}
+                /* Menu */
+/* #menuVertical{height:auto;} */
+#menuVertical ul{
+    display:block;
+    /* box-shadow: 0 0 10px rgba(0,0,0,0.3); Параметры тени */
+    background-color: white;
+    /* width:190px; */
+    height:auto;
+    margin:0px;
+    padding:0px;
+    list-style:none;
+    position:relative;
+}
+#menuVertical ul li{display:block; width:auto; height:auto; position:relative;}
+#menuVertical ul li a{
+    position:relative;
+    display:block;
+    width:210px;
+    height:auto;
+    box-sizing:border-box;
+    border-bottom: black 2px;
+    /* font-size:13px; */
+    /* text-transform:uppercase; */
+    /* font-weight:bold; */
+    /* color:black; */
+    font: 18px solid, Arial;
+    color:black;
+    /* line-height:1.2em; */
+    padding:10px 15px;
+    /* background:#3A9CD3; */
+    /* border-top:1px solid #236A92; */
+    text-decoration:none;
+}
+#menuVertical ul  li:first-child a{border:0px;}
+#menuVertical ul li a:hover, #menuVertical ul li:hover a{
+    /* background:white; */
+}
+#menuVertical ul li ul{
+    position:absolute;
+    top:0px;
+    left:100%;
+    display:none;
+    width:auto;
+}
+/*******показываем выпадашку при наведении ********/
+#menuVertical ul li:hover ul{display:block;}
+#menuVertical ul li ul li a{
+    white-space:nowrap;
+    text-transform:none;
+    padding:5px 20px;
+}
+#menuVertical ul li ul li a:hover{
+    /* background:#75C1D4;
+    color:#0A3CC1; */
+}
+.back_footer{
+    background-color: black;
+    width: 1920px;
+    color: rgba(255, 255, 255, 0.445);
+    display: flex;
+    flex-direction: row-reverse;
+}
+.back_footer_text{
+    margin: 40px 100px;
+}
+.search_text_style{
+    font: 25px solid, Arial;
+    margin: 10px 50px;
+}
+.marg_cent_mail{
+    margin-right: 200px;
+}
+.marg_cent_mail input{
+    margin-bottom: 20px;
+}
+.mailing_style{
+    color:#938888;
+    margin-left: -80px;
+    margin: -52px 0px 0px 370px;
+    font: 16px Arial;
+    cursor: pointer;
+}
+.flo_right{
+    float: right;
+    padding-bottom: 15px;
 }
